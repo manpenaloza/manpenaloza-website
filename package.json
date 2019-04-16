@@ -1,11 +1,11 @@
 {
   "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Personal website of Manuel Penaloza. Source code based on the blog starter powered by Gatsby and Markdown.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Manuel Penaloza <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/manpenaloza/manpenaloza-website/issues"
   },
   "dependencies": {
     "gatsby": "^2.3.16",
@@ -40,7 +40,9 @@
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
