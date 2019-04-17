@@ -39,7 +39,7 @@ function Bio() {
               }}
             />
             <p>
-                My name is <strong>{author}</strong>. I live in Austria and work as a web developer building things to enrich the internet and improve business success of <a href="https://www.blue-tomato.com ">Blue Tomato</a>
+                My name is <strong>{author}</strong>. I live in Austria and work as a web developer building things to enrich the internet and improve business success of <a href="https://www.blue-tomato.com ">Blue Tomato</a>. On Twitter: <a href="https://www.twitter.com/manpenaloza">@manpenaloza</a>
               {` `}
             </p>
           </div>
