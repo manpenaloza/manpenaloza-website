@@ -8,12 +8,13 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
+    const fontScale = typeof window !== 'undefined' && window.innerWidth < 768 ? scale(.6) : scale(1.5);
 
-    if (location.pathname === rootPath) {
+      if (location.pathname === rootPath) {
       header = (
         <h1
           style={{
-            ...(window.innerWidth < 768 ? scale(.6) : scale(1.5)),
+            ...(typeof window !== 'undefined' && fontScale),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
