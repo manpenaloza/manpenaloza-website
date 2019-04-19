@@ -1,7 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import Hero from './hero';
+import { createGlobalStyle } from 'styled-components';
 
 import { rhythm, scale } from "../utils/typography"
+import Bio from "./bio";
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+`
 
 class Layout extends React.Component {
   render() {
@@ -52,7 +68,8 @@ class Layout extends React.Component {
         </h3>
       )
     }
-    return (
+    return ([
+      location.pathname === rootPath && <Hero>{header}<Bio/></Hero>,
       <div
         style={{
           marginLeft: `auto`,
@@ -61,15 +78,16 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        {location.pathname !== rootPath && <header>{header}</header>}
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+        <GlobalStyle/>
       </div>
-    )
+    ])
   }
 }
 
