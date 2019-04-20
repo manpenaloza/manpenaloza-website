@@ -34,7 +34,7 @@ const ParallaxWrapper = styled.div`
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: url("trianglify.png");
+    background-image: url("trianglify.svg");
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
