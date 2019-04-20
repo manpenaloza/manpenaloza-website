@@ -1,22 +1,29 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link } from "gatsby"
-import Hero from './hero';
-import { createGlobalStyle } from 'styled-components';
+import Hero from "./hero"
+import styled, { css } from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
-import Bio from "./bio";
+import Bio from "./bio"
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    overflow: hidden;
-}
-body {
-    height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x:hidden;
-    overflow-y:auto;
-}
+const Main = styled.main``
+const RootWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(25)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  perspective: 1000px; // exists to give perspective to the blog post teaser wrappers
+  ${props =>
+    props.withHero &&
+    css`
+      // upcoming styles required to support cool hero appearance
+      position: relative;
+      z-index: 20;
+      padding-top:20vh;
+      background-image: url("trianglify.png");
+      //background: rgba(255, 255, 255, 0.4);
+      clip-path: polygon(0% 5%, 100% 0%, 1000% 100%, 0% 100%);
+    `}
 `
 
 class Layout extends React.Component {
@@ -24,28 +31,36 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
-    const fontScale = typeof window !== 'undefined' && window.innerWidth < 768 ? scale(.6) : scale(1.5);
+    const fontScale =
+      typeof window !== "undefined" && window.innerWidth < 768
+        ? scale(0.6)
+        : scale(1.5)
 
-      if (location.pathname === rootPath) {
+    if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...(typeof window !== 'undefined' && fontScale),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <Hero
+          renderContent={[
+            <h1
+              style={{
+                ...(typeof window !== "undefined" && fontScale),
+                marginBottom: rhythm(1.5),
+                marginTop: 0,
+              }}
+            >
+              <Link
+                style={{
+                  boxShadow: `none`,
+                  textDecoration: `none`,
+                  color: `inherit`,
+                }}
+                to={`/`}
+              >
+                {title}
+              </Link>
+            </h1>,
+            <Bio />,
+          ]}
+        />
       )
     } else {
       header = (
@@ -68,26 +83,18 @@ class Layout extends React.Component {
         </h3>
       )
     }
-    return ([
-      location.pathname === rootPath && <Hero>{header}<Bio/></Hero>,
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+    return [
+        header,
+      <RootWrapper withHero={location.pathname === rootPath && header}>
         {location.pathname !== rootPath && <header>{header}</header>}
-        <main>{children}</main>
+        <Main>{children}</Main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-        <GlobalStyle/>
-      </div>
-    ])
+      </RootWrapper>,
+    ]
   }
 }
 

@@ -34,12 +34,21 @@ function Bio() {
                 height: 100,
                 borderRadius: `100%`,
               }}
-              imgStyle={{
-                // borderRadius: `20%`,
-              }}
+              imgStyle={
+                {
+                  // borderRadius: `20%`,
+                }
+              }
             />
             <p>
-                My name is <strong>{author}</strong>. I live in Austria and work as a web developer building things to enrich the internet and improve business success of <a href="https://www.blue-tomato.com ">Blue Tomato</a>. On Twitter: <a href="https://www.twitter.com/manpenaloza">@manpenaloza</a>
+              My name is <strong>{author}</strong>. I live in Austria and work
+              as a web developer building things to enrich the internet and
+              improve business success of{" "}
+              <a href="https://www.blue-tomato.com ">Blue Tomato</a>. On
+              Twitter:{" "}
+              <a href="https://www.twitter.com/manpenaloza">@manpenaloza</a>.
+              Things I enjoy: daughter-driven development 👪, Tennis 🎾,
+              Snowboarding 🏂
               {` `}
             </p>
           </div>
@@ -54,7 +63,7 @@ const bioQuery = graphql`
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
         fixed(width: 200, height: 200) {
-            ...GatsbyImageSharpFixed_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }

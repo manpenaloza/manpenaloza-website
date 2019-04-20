@@ -1,10 +1,26 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+
+const TeaserWrapper = styled.div`
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  margin: 30px 0;
+
+  &:hover {
+    transform: scale(1.01) rotateY(-2deg) rotateX(3deg) translateZ(-1px)
+      translateX(-8px);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 10px 5px 15px grey;
+  }
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,7 +37,7 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <TeaserWrapper key={node.fields.slug}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
@@ -37,7 +53,7 @@ class BlogIndex extends React.Component {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-            </div>
+            </TeaserWrapper>
           )
         })}
       </Layout>
