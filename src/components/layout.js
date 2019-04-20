@@ -6,24 +6,27 @@ import styled, { css } from "styled-components"
 import { rhythm, scale } from "../utils/typography"
 import Bio from "./bio"
 
-const Main = styled.main``
 const RootWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: ${rhythm(25)};
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  padding: 0 ${rhythm(3 / 4)};
   perspective: 1000px; // exists to give perspective to the blog post teaser wrappers
   ${props =>
     props.withHero &&
+    // upcoming styles required to support cool hero appearance
     css`
-      // upcoming styles required to support cool hero appearance
       position: relative;
-      z-index: 20;
+      z-index: 2;
       padding-top:20vh;
-      background-image: url("trianglify.png");
-      //background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.4);
       clip-path: polygon(0% 5%, 100% 0%, 1000% 100%, 0% 100%);
+      transform: translateZ(0); // usage here IS A BIG FUCKIN' MESSUP: dirty hack only exists as chrome did not properly apply z-index on initial load. Huge thx to @morewry mentioning/fixing this here https://stackoverflow.com/questions/3485365/how-can-i-force-webkit-to-redraw-repaint-to-propagate-style-changes
     `}
+  
+  @media(min-width: 768px) {
+    padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  }
 `
 
 class Layout extends React.Component {
@@ -84,10 +87,9 @@ class Layout extends React.Component {
       )
     }
     return [
-        header,
+      location.pathname === rootPath ? header : <header>{header}</header>,
       <RootWrapper withHero={location.pathname === rootPath && header}>
-        {location.pathname !== rootPath && <header>{header}</header>}
-        <Main>{children}</Main>
+        <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

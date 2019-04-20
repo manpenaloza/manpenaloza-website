@@ -35,6 +35,7 @@ const ParallaxWrapper = styled.div`
     top: 0;
     left: 0;
     background-image: url("trianglify.png");
+    background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);

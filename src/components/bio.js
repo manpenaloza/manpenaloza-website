@@ -8,8 +8,21 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import styled from 'styled-components'
 
 import { rhythm } from "../utils/typography"
+
+const Wrapper = styled.section`
+ margin-bottom: ${rhythm(2.5)};
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+   
+ @media(min-width: 768px) {
+  flex-direction: row;
+    align-items: initial; 
+ }
+`
 
 function Bio() {
   return (
@@ -18,19 +31,15 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-          >
+          <Wrapper>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
-                minWidth: 100,
+                minWidth: 100, // required instead of 'width: 100' as gatsby-image does some weired stylings regarding images
+                maxWidth: 100, // required instead of 'width: 100' as gatsby-image does some weired stylings regarding images
                 height: 100,
                 borderRadius: `100%`,
               }}
@@ -47,11 +56,9 @@ function Bio() {
               <a href="https://www.blue-tomato.com ">Blue Tomato</a>. On
               Twitter:{" "}
               <a href="https://www.twitter.com/manpenaloza">@manpenaloza</a>.
-              Things I enjoy: daughter-driven development 👪, Tennis 🎾,
-              Snowboarding 🏂
               {` `}
             </p>
-          </div>
+          </Wrapper>
         )
       }}
     />

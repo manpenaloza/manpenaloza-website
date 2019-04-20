@@ -34,6 +34,7 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
+        {/*TODO <ComponentIncludingThingsILike ilike={👪,🎾,🏂} />*/}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
