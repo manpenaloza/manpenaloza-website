@@ -36,6 +36,7 @@ const ParallaxWrapper = styled.div`
     left: 0;
     background-image: url("trianglify.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);
@@ -57,6 +58,10 @@ const ParallaxContentWrapper = styled.div`
 
   @media (min-width: 1024px) {
     width: 60%;
+  }
+  
+  @media(min-width: 1370px) {
+    width: 45%;
   }
 `
 
