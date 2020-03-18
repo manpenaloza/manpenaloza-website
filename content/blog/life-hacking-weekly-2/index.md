@@ -1,5 +1,5 @@
 ---
-title: Life Hacking Weekly #1
+title: 'Life Hacking Weekly #2'
 date: "2020-03-25T12:50:03.284Z"
 ---
 
