@@ -46,10 +46,10 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - PRODUCTIVITY: `Pomodoro Technique`. Not my beer.
 - TECH: NodeJS and Express to provide an endpoint to uploaded web form files, quite a journey
 - BODY: Go on a fast - takeaways from the no-sugar and no-beer adventure
-- BUSINESS: How to prioritize personal software ideas of workload gets too much?
+- BUSINESS: How to prioritize personal software ideas if workload gets too much?
 - SOCIAL: Reddit's /r/LifeProTips, pure gold for free
 - PRODUCTIVITY: "I don't have time"... Really?
-- TECH: Spacing CSS properties using TailwindCSS
+- TECH: Spacing CSS utilities using TailwindCSS
 - PRODUCTIVITY: [Grammarly](https://grammarly.com), amongst the top language software ever used
 - COOL-STUFF: Focus-Flow lists on Spotify
 - BRAIN: Try and fail approach > how to deal with both scenarios
