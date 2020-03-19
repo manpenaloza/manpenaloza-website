@@ -34,6 +34,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - SOCIAL: Learn to never be like... `Bernhard Tilg`, having been either ultimately drunk or the denial of the truth in person talking about `COVID-19` on Austria's official news broadcast
 - BODY: Boost your daily well-being with a simple checkmark list
 - TECH: Javascript async/await and its relation to Javascript Promises
+- TECH: Ternary Javascript [operators alternatives](https://twitter.com/sulco/status/1240262496629514240/photo/1)
 - FINANCES: Personal accountings, a hate-love relationship
 - NUTRITION: Where's the meat gone?
 - BRAIN: How to identify learning resources that are suitable and tailor-made for you as a person
@@ -54,6 +55,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - COOL-STUFF: Focus-Flow lists on Spotify
 - BRAIN: Try and fail approach > how to deal with both scenarios
 - SOCIAL: Facebook, I more and more hate you. Anyone out there with good hints to be able to simply "turn it off"?
+- FINANCE: 3 Stock market order types: Market, Limit, Stop/Loss (Market or Limit). Understandable thanks to this great piece of [explanation video](https://www.youtube.com/watch?v=DF23jO8Y0n0).
 - BRAIN: The flashcards principle and a beauty named [brainscape.com](https://brainscape.com)
 - PRODUCTIVITY: Typora, cause Markdown is such a 🚀
 
