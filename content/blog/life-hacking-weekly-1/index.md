@@ -45,6 +45,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - TECH: TailwindCSS, imho the advantages predominate
 - FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
 - PRODUCTIVITY: `Pomodoro Technique`. Not my beer.
+- TECH: `git rebase`: a powerful tool that barely causes problems ;)
 - TECH: NodeJS and Express to provide an endpoint to uploaded web form files, quite a journey
 - BODY: Go on a fast - takeaways from the no-sugar and no-beer adventure
 - BUSINESS: How to prioritize personal software ideas if workload gets too much?
@@ -53,9 +54,11 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - TECH: Spacing CSS utilities using TailwindCSS
 - PRODUCTIVITY: [Grammarly](https://grammarly.com), amongst the top language software ever used
 - COOL-STUFF: Focus-Flow lists on Spotify
+- TECH: Linux stdin/stdout principle and its helpers >/>>/<</</&&/|
 - BRAIN: Try and fail approach > how to deal with both scenarios
 - SOCIAL: Facebook, I more and more hate you. Anyone out there with good hints to be able to simply "turn it off"?
 - FINANCE: 3 Stock market order types: Market, Limit, Stop/Loss (Market or Limit). Understandable thanks to this great piece of [explanation video](https://www.youtube.com/watch?v=DF23jO8Y0n0).
 - BRAIN: The flashcards principle and a beauty named [brainscape.com](https://brainscape.com)
 - PRODUCTIVITY: Typora, cause Markdown is such a 🚀
-
+- TECH: CSS positon `sticky` using postioning property like 'top' to make it actually work
+- BRAIN: [Ultralearning](https://www.njlifehacks.com/ultralearning-by-scott-young-book-summary/), ultra good!
