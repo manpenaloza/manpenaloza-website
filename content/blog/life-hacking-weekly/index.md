@@ -61,12 +61,12 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 
 ### 1
 - TECH: `git rebase`: a powerful tool that barely causes problems ;)
-- FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
-- TECH: building an "enterprise architecture" architecture using `create-react-app`
 
-[> Go to article](./1/index.md)
+[> Go to article](./1)
 
 ### 2 (upcoming and thus TBA)
+- TECH: building an "enterprise architecture" architecture using `create-react-app`
+- FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
 - FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
 - TECH: A future Linux takeaway called *`man`* script
 - FINANCES: Personal accountings, a hate-love relationship
