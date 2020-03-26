@@ -28,9 +28,11 @@ As I wanted to merge the last two commits into one commit, I had to execute this
 ```bash
 git rebase --interactive HEAD~2
 ```
-- `git rebase` is the git program executed
-- `--interactive` or `-i` is the program flag to execute in interactive mode
-- `HEAD~2` tells the rebase process, to consider the last two commits based on the HEAD (a pointer referencing, in example, the last commit of a branch)
+** `git rebase` is the git program executed
+
+** `--interactive` or `-i` is the program flag to execute in interactive mode
+
+** `HEAD~2` tells the rebase process, to consider the last two commits based on the HEAD (a pointer referencing, in example, the last commit of a branch)
 
 This will bring up an editor providing the possibility to *interact*. Within the editor, you'll find the two commit messages with the word `pick` prepended. Instead of the word `pick` (which is something like a rebase action), you can insert different options to continue the rebase process after the interactive view is saved and closed.
 
