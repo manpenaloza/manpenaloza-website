@@ -25,17 +25,12 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 ...will be published soon and will include some extended and summarized takeaways out of these potential learnings:
 
 - PRODUCTIVITY: The 'My-List' approach of planning your day
-- TECH: A future Linux takeaway called *`man`* script
 - PRODUCTIVITY: *"Forced"* Homeoffice vs. the Homeoffice we love and know
 - SPORTS: The painful suffering starting out with Crossfit
 - COOL-STUFF: Reddit as a news platform? Works!
-- TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
 - TECH: NodeJS SMB-client to handle Linux<->WhateverExternalSource data exchange
-- SOCIAL: Learn to never be like... `Bernhard Tilg`, having been either ultimately drunk or the denial of the truth in person talking about `COVID-19` on Austria's official news broadcast
-- BODY: Boost your daily well-being with a simple checkmark list
 - TECH: Javascript async/await and its relation to Javascript Promises
 - TECH: Ternary Javascript [operators alternatives](https://twitter.com/sulco/status/1240262496629514240/photo/1)
-- FINANCES: Personal accountings, a hate-love relationship
 - NUTRITION: Where's the meat gone?
 - BRAIN: How to identify learning resources that are suitable and tailor-made for you as a person
 - TECH: NextJS pages and routing concept, so good
@@ -43,9 +38,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - PRODUCTIVITY: The `tasks-that-only-take-10-minutes` principle
 - FINANCES: Invoices and shoe box, there's a good match if you run an EPU
 - TECH: TailwindCSS, imho the advantages predominate
-- FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
 - PRODUCTIVITY: `Pomodoro Technique`. Not my beer.
-- TECH: `git rebase`: a powerful tool that barely causes problems ;)
 - TECH: NodeJS and Express to provide an endpoint to uploaded web form files, quite a journey
 - BODY: Go on a fast - takeaways from the no-sugar and no-beer adventure
 - BUSINESS: How to prioritize personal software ideas if workload gets too much?
@@ -62,3 +55,17 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - PRODUCTIVITY: Typora, cause Markdown is such a 🚀
 - TECH: CSS positon `sticky` using postioning property like 'top' to make it actually work
 - BRAIN: [Ultralearning](https://www.njlifehacks.com/ultralearning-by-scott-young-book-summary/), ultra good!
+
+## Hacked around with in 2020
+
+### 2
+- TECH: `git rebase`: a powerful tool that barely causes problems ;)
+- FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
+- TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
+
+[> Go to article](../2/index.md)
+
+### 3 (upcoming and thus tba)
+- TECH: A future Linux takeaway called *`man`* script
+- FINANCES: Personal accountings, a hate-love relationship
+- BODY: Boost your daily well-being with a simple checkmark list
