@@ -1,72 +1,48 @@
 ---
 title: 'Life Hacking Weekly #1'
-date: "2020-03-18T12:50:03.284Z"
+date: "2020-03-26T12:50:03.284Z"
 ---
 
-During these days of COVID-19 I thought a lot about those concepts and suggestions popping up regularly on social media dealing with "learn something new, cause there's time for it now". So far so good. As a self-taught programmer, the concept of lifelong and intrinsically motivated learning is nothing new to me. Also, my point of view regarding lifelong learning hasn't changed due to those social media echos. Hacking myself has been and will always be important. 
+Upfront: This post is part of a `Life Hacking Weekly` series I started and explained in this [initial post](../index.md). The main idea is to ensure learning progress dealing with (independent) things taken out of life and profession.
 
-Somehow all these mentioned above "thinking about lifelong learning" phases during the last few days brought up the conclusion that my own concept and approach require optimizations. For too long these approaches of "read/watch something, try/fail in it" have lasted and thus need to evolve. In case you're still reading this article, you're already part of the game and in the midst of a first step to initiate the optimization: **`Life Hacking Weekly`**. Articles, including content I want to share and note on things I investigated time on or tried to learn within the last 7 days + its important details and conclusions.
+## TECH: `git rebase`, a powerful tool that barely causes problems ;)
 
-## Life Hacking Weekly - why?
+Recently I came across the situation to merge the last two git commits of a website I work on. As I wasn't aware of how to solve this properly, a Google search forwarded me to this [Stackoverflow page](https://stackoverflow.com/questions/2563632/how-can-i-merge-two-commits-into-one-if-i-already-started-rebase). In summary, the given answers that seemed most relevant to me suggested two ways to solve this:
 
-Some weeks ago I saw a [great video on Youtube](https://www.youtube.com/watch?v=rQ7lkF7iWtc) created by Preethi Kasireddy, a woman whom I follow on social media since she started to share her journey on learning how to code. The video is part of a series that deals with the topic "How to learn". It includes some really good points on how to come closer to desired learning results or how to deal with setbacks you experience when learning something new.
+1. Use `git reset` and `git commit` with specific flags
+Use the following two commands to combine  two commits into one commit:
+```bash
+git reset --soft "HEAD^"
+git commit --amend
+```
+At first, `git reset` is used combined with the `--soft` flag. This causes a reset of ONLY the `HEAD` git tracks. On the opposite, if using `git reset` with the `--hard` flag (well known, if you want to discard all changes since the last git commit), git resets the `HEAD,` but also the `index and the working tree`!
 
-During this video series at one point, she mentioned the importance of keeping track of your learning progress or actions and gadgets that support your learning progress. Keeping track of learning progress? Never done so far, just tried and failed, tried and failed. So here we are. Remembering this tip of Preethi Kasireddy combined with my thoughts about the "learning something new" social media pop ups represent the causing mixture of `Life Hacking weekly` articles coming up in the future. Those articles will include personal notes, relevant details and progress trackings about different topics. All of that will deal with very much personal experience and preference, so in the end, there will be no urgent need for you to read those articles, right :)? But as a programmer and fan of open source software, sharing knowledge and experiences is part of my personal nature. That's why this is going to happen public and might let you profit in the form of inspiration considering your own lifelong learning goals and journey.
+Important **note** on this way of solving it: You can merge as many commits as you want, as long as they are the last `X` commits, and not somewhere in the middle. Just run 
+```bash
+git reset --soft HEAD~10
+```
+ where 10 is the number of commits, you want to merge.
 
-## Tech only? No, absolutely no. Not this time.
+2. Use `git rebase` interactively
+As I wanted to merge the last two commits into one commit, I had to execute this rebase action.
+```bash
+git rebase --interactive HEAD~2
+```
+- `git rebase` is the git program executed
+- `--interactive` or `-i` is the program flag to execute in interactive mode
+- `HEAD~2` tells the rebase process, to consider the last two commits based on the HEAD (a pointer referencing, in example, the last commit of a branch)
 
-It's important to mention that bringing up this concept of `Life Hacking Weekly` has to differentiate compared to my approach that happened so far. My past and conscious approach to lifelong learning had a massive focus on tech and programming related stuff. But of course - besides that - a lot of learning progress has taken place besides programming, it just didn't matter that much... But hey, now it's called `LIFE Hacking Weekly`, right? Well, life is more than Javascript, ReactJS and other technologies. Because life is: Javascript ;), sports, psychology, cooking, nutrition, keep calm and do whatever, finances, etc. etc.
+This will bring up an editor providing the possibility to *interact*. Within the editor, you'll find the two commit messages with the word `pick` prepended. Instead of the word `pick` (which is something like a rebase action), you can insert different options to continue the rebase process after the interactive view is saved and closed.
 
-## Imposter syndrome prevention ***!important***
+```git
+pick = use commit as it is
+reword = use commit, but edit the commit message
+edit = use commit, but stop for amending
+squash = use commit, but meld into previous commit
+fixup = like "squash", but discard this commit's log message
+```
 
-In case you follow some of the upcoming `Life Hacking Weekly` articles, make sure you read everything considering that the listed topics and learnings are just things I spent time on and probably liked. That does not mean I'm able to do or execute those things well and profoundly. Also, it's not said that I'm going to follow concepts and learnings after they got noted here. Remember: the idea behind this is to consciously resume and take note of personal progress and supportive add-ons, not to plan and fix the personal future and profession.
+As I wanted my previous commit to merge with the most current commit, I replaced the `pick` with a `fixup`, saved, and closed the file. Once done, the command line will log something like "Rebase done successfully." 🎉
 
-## Preview: Life Hacking Weekly #2...
-...will be published soon and will include some extended and summarized takeaways out of these potential learnings:
-
-- PRODUCTIVITY: The 'My-List' approach of planning your day
-- PRODUCTIVITY: *"Forced"* Homeoffice vs. the Homeoffice we love and know
-- SPORTS: The painful suffering starting out with Crossfit
-- COOL-STUFF: Reddit as a news platform? Works!
-- TECH: NodeJS SMB-client to handle Linux<->WhateverExternalSource data exchange
-- TECH: Javascript async/await and its relation to Javascript Promises
-- TECH: Ternary Javascript [operators alternatives](https://twitter.com/sulco/status/1240262496629514240/photo/1)
-- NUTRITION: Where's the meat gone?
-- BRAIN: How to identify learning resources that are suitable and tailor-made for you as a person
-- TECH: NextJS pages and routing concept, so good
-- BRAIN: [brain.fm](https://brain.fm) 🎶 is the key
-- PRODUCTIVITY: The `tasks-that-only-take-10-minutes` principle
-- FINANCES: Invoices and shoe box, there's a good match if you run an EPU
-- TECH: TailwindCSS, imho the advantages predominate
-- PRODUCTIVITY: `Pomodoro Technique`. Not my beer.
-- TECH: NodeJS and Express to provide an endpoint to uploaded web form files, quite a journey
-- BODY: Go on a fast - takeaways from the no-sugar and no-beer adventure
-- BUSINESS: How to prioritize personal software ideas if workload gets too much?
-- SOCIAL: Reddit's /r/LifeProTips, pure gold for free
-- PRODUCTIVITY: "I don't have time"... Really?
-- TECH: Spacing CSS utilities using TailwindCSS
-- PRODUCTIVITY: [Grammarly](https://grammarly.com), amongst the top language software ever used
-- COOL-STUFF: Focus-Flow lists on Spotify
-- TECH: Linux stdin/stdout principle and its helpers >/>>/<</</&&/|
-- BRAIN: Try and fail approach > how to deal with both scenarios
-- SOCIAL: Facebook, I more and more hate you. Anyone out there with good hints to be able to simply "turn it off"?
-- FINANCE: 3 Stock market order types: Market, Limit, Stop/Loss (Market or Limit). Understandable thanks to this great piece of [explanation video](https://www.youtube.com/watch?v=DF23jO8Y0n0).
-- BRAIN: The flashcards principle and a beauty named [brainscape.com](https://brainscape.com)
-- PRODUCTIVITY: Typora, cause Markdown is such a 🚀
-- TECH: CSS positon `sticky` using postioning property like 'top' to make it actually work
-- BRAIN: [Ultralearning](https://www.njlifehacks.com/ultralearning-by-scott-young-book-summary/), ultra good!
-- TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
-
-## Hacked around with in 2020
-
-### 2
-- TECH: `git rebase`: a powerful tool that barely causes problems ;)
-- FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
-- TECH: building an "enterprise architecture" architecture using `create-react-app`
-
-[> Go to article](../2/index.md)
-
-### 3 (upcoming and thus tba)
-- TECH: A future Linux takeaway called *`man`* script
-- FINANCES: Personal accountings, a hate-love relationship
-- BODY: Boost your daily well-being with a simple checkmark list
+## TECH: building an "enterprise architecture" architecture using `create-react-app`
+TBA
