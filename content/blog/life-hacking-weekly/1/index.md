@@ -55,13 +55,14 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - PRODUCTIVITY: Typora, cause Markdown is such a 🚀
 - TECH: CSS positon `sticky` using postioning property like 'top' to make it actually work
 - BRAIN: [Ultralearning](https://www.njlifehacks.com/ultralearning-by-scott-young-book-summary/), ultra good!
+- TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
 
 ## Hacked around with in 2020
 
 ### 2
 - TECH: `git rebase`: a powerful tool that barely causes problems ;)
 - FINANCES: PUT or CALL stock options ¯\\_(ツ)_/¯
-- TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
+- TECH: building an "enterprise architecture" architecture using `create-react-app`
 
 [> Go to article](../2/index.md)
 

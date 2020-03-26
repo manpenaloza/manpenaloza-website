@@ -13,4 +13,4 @@ This post is part of a `Life Hacking Weekly` series I started and explained in t
 
 
 
-##  TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
+## TECH: building an "enterprise architecture" architecture using `create-react-app`
