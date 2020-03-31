@@ -9,7 +9,7 @@ Upfront: This post is part of a `Life Hacking Weekly` series I started and expla
 
 Recently I came across the situation to merge the last two git commits of a website I work on. As I wasn't aware of how to solve this properly, a Google search forwarded me to this [Stackoverflow page](https://stackoverflow.com/questions/2563632/how-can-i-merge-two-commits-into-one-if-i-already-started-rebase). In summary, the given answers that seemed most relevant to me suggested two ways to solve this:
 
-1. Use `git reset` and `git commit` with specific flags
+1.   Use `git reset` and `git commit` with specific flags
 Use the following two commands to combine  two commits into one commit:
 ```bash
 git reset --soft "HEAD^"

@@ -56,6 +56,9 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - TECH: CSS position `sticky` using positioning property like 'top' to finally make it work
 - BRAIN: [Ultralearning](https://www.njlifehacks.com/ultralearning-by-scott-young-book-summary/), ultra good!
 - TECH: Special attention on a fabulous [NextJS tutorial playlist made by Bruno Antunes](https://www.youtube.com/watch?v=7J4iL1HDshQ&list=PLYSZyzpwBEWSQsrukurP09ksi49H9Yj40)
+- TECH: (secure) User authentication using bcrypt password hashing and JWT
+- TECH: Parallax Scrolling using the `Rellax.js` library
+- TECH: [Headless E-Commerce](https://www.shopify.de/blog/headless-commerce) using Shopify's `Storefront API`
 
 ## Hacked around with during 2020
 
