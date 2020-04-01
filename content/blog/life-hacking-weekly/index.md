@@ -59,6 +59,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - TECH: (secure) User authentication using bcrypt password hashing and JWT
 - TECH: Parallax Scrolling using the `Rellax.js` library
 - TECH: [Headless E-Commerce](https://www.shopify.de/blog/headless-commerce) using Shopify's `Storefront API`
+- TECH: UNIX Piping as a measure towards to command line next leveling 
 
 ## Hacked around with during 2020
 
