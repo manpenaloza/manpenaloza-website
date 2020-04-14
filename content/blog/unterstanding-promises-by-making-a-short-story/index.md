@@ -1,6 +1,6 @@
 ---
 title: Understanding Javascript Promises - a short story
-date: "2019-03-24T22:12:03.284Z"
+date: "2020-04-14T22:12:03.284Z"
 description: Understanding Javascript promises can be a little tricky. Let's make a short story taken out of life to show how Promises work.
 tags: javascript
 ---
