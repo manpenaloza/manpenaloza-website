@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Themes, Gatsby Starters 🤔 - what's the difference and what to use"
-date: "2020-04-046T12:50:03.284Z"
+date: "2020-04-04"
 ---
 
 # Gatsby Themes, Gatsby Starters 🤔 - what's the difference and what to use

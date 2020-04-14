@@ -1,6 +1,6 @@
 ---
 title: "Life Hacking Weekly #1"
-date: "2020-03-26T12:50:03.284Z"
+date: "2020-03-26"
 ---
 
 Upfront: This post is part of a `Life Hacking Weekly` series I started and explained in this [initial post](../index.md). The main idea is to ensure learning progress dealing with (independent) things taken out of life and profession.

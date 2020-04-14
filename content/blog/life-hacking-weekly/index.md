@@ -1,6 +1,6 @@
 ---
 title: "Life Hacking Weekly"
-date: "2020-03-18T12:50:03.284Z"
+date: "2020-03-18"
 ---
 
 During these days of COVID-19, I thought a lot about those concepts and suggestions popping up regularly on social media dealing with "learn something new, cause there's time for it now". So far so good. As a self-taught programmer, the concept of lifelong and intrinsically motivated learning is nothing new to me. Also, my point of view regarding lifelong learning hasn't changed due to those social media echos. Hacking myself has been and will always be important.

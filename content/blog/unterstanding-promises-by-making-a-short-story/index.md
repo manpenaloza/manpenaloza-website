@@ -1,13 +1,13 @@
 ---
-title: Understanding Javascript Promises - a short story
-date: "2020-04-14T22:12:03.284Z"
-description: Understanding Javascript promises can be a little tricky. Let's make a short story taken out of life to show how Promises work.
-tags: javascript
+title: "Understanding Javascript Promises - a short story"
+date: "2020-04-10"
+description: "Understanding Javascript promises can be a little tricky. Let's make a short story taken out of life to show how Promises work."
+tags: javascript, es6
 ---
 
 You and your girl-/boyrfriend (in my case: girlfriend) go to the cinema. When about to pass the ticket control, this is what happens:
 
-1. Two persons are before us in the queue, so they show the tickets enter the cinema
+1. Two persons are before us in the cinema queue, so they show the tickets enter the cinema.
 2. When I want to enter the cineme, my girlfriend still is not here with the tickets. So I promise the controller that there will be tickets in a few seconds.
 3. As the cinema queue should move on (and thus stay asynchonous, just like javascript), the person behind me can enter the cinema
 4. My girlfriend comes and has the tickets, yes! But she tells me that she wants popcorn. I promise, to get here some.

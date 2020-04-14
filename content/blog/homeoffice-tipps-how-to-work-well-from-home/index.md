@@ -1,9 +1,10 @@
 ---
 title: Homeoffice like a boss! How to work well and productive within your own 4 walls.
-date: "2020-03-12T22:12:03.284Z"
+date: "2020-03-12"
 ---
+
 ![](./hero.jpeg)
-*Photo by Alisa Anton on Unsplash*
+_Photo by Alisa Anton on Unsplash_
 
 🏡 💻 is not a work option I’ve done for years just because it’s been trendy and cool. Done correctly, it's a productivity and employee satisfaction tool. In these days of COVID-19, it receives more media and political attention than ever before, and to some degree, there isn't too much time or knowledge to decide whether it’s suitable for the company or not. But soon it will become a reality for a vast amount of employees out there. Necessarily. More and more company offices will be closed until COVID-19 is contained.
 
@@ -20,8 +21,9 @@ Having a successful day of remote working depends crucially on how you start you
 Yes, there's room for improvement. For everyone. All the time. If you work as part of a team and for a collective achievement, communication is THE key. But anyway, that's what you know for sure. I won't point out detailed hints on how you should set up your communication and needed systems. This highly depends on you and your team.
 
 Before you start making progress at home, make sure you've done everything possible to find out which ways of communication to choose and which rules of communication exist for you and your team. There's a lot of excellent software out there that will help you to come up with good results and setups to communicate well with your colleagues and business partners. At least check out these software products:
-- *to chat and information/file sharing*: Slack, Flock, Chanty, Glip
-- *to handle meetings*: Zoom, GoToMeeting
+
+- _to chat and information/file sharing_: Slack, Flock, Chanty, Glip
+- _to handle meetings_: Zoom, GoToMeeting
 
 Once you've all decided on a way of communication and proper communication software, be a reliable and proactive communicator. Done so, you've already mastered half of the remote working battle.
 

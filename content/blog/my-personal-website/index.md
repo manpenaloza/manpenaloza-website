@@ -1,8 +1,7 @@
 ---
-title: My new personal website
-date: "2019-03-12T22:12:03.284Z"
+title: "My new personal website"
+date: "2019-03-12"
 ---
-
 
 > This is my first post on my new website. That's exciting!
 > Also because this stuff is written and parsed from a markdown file using the frontmatter power of Gatsby.

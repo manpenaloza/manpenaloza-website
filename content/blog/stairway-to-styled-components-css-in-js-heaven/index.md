@@ -1,6 +1,6 @@
 ---
 title: src/.../styled.js - stairway to Styled-Component's CSS-in-JS heaven
-date: "2019-03-24T22:12:03.284Z"
+date: "2019-03-24"
 description: Take a deep dive into the practical entry file to the Styled-Components library. The src/../styled.js file works hard to provide you an API that's tons of fun to work with.
 tags: styled-components, react, css-in-js, css
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/klqejot52rsa81o17hyc.jpg
