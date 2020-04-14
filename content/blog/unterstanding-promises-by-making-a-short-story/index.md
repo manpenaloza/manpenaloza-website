@@ -62,4 +62,4 @@ butGirlfriendWantsSaltOnPopcorn.then((ticketsWithPopcornAndSalt) => {
 console.log("Person 4 enters cinema with the ticket")
 ```
 
-This way of learning about Promises is taken from this awesome [Youtube tutorial by techsith](https://www.youtube.com/watch?v=IGoAdn-e5II&t=1032s).
+This way of learning about Promises is taken from this awesome [Youtube tutorial by techsith](https://www.youtube.com/watch?v=IGoAdn-e5II).
