@@ -62,6 +62,7 @@ In case you follow some of the upcoming `Life Hacking Weekly` articles, make sur
 - TECH: [Headless E-Commerce](https://www.shopify.de/blog/headless-commerce) using Shopify's `Storefront API`
 - TECH: UNIX Piping as a measure towards to command line next leveling
 - TECH: Pair Programming, the good parts (no bad parts here).
+- BUSINESS: To be good at marketing, do I need a Marketing-specific education or even studies?
 
 ## Hacked around with during 2020
 
